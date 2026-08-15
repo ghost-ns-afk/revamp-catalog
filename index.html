@@ -362,7 +362,7 @@
 const CONFIG = {
   WHATSAPP_NUMBER: "918448714343",       // wa.me format: country code + number, no + or spaces
   CONTACT_PHONE_DISPLAY: "+91 84487 14343",
-  LAST_SYNCED: "14 Aug 2026, 09:51 AM IST",        // stamped by build/build_sync.py on every daily run
+  LAST_SYNCED: "15 Aug 2026, 08:41 AM IST",        // stamped by build/build_sync.py on every daily run
 };
 
 /* =========================================================
@@ -374,7 +374,7 @@ const BASE_PRODUCTS = [{"id": "lunar-ore", "slug": "lunar-ore", "url": "https://
 // (columns: MinOrderValue, DiscountPct, Label). Sorted ascending by
 // build/build_sync.py. Applied automatically on top of the cart subtotal —
 // the highest tier the subtotal qualifies for wins.
-const ORDER_VALUE_DISCOUNTS = [{"minValue": 15000.0, "discountPct": 3.0, "label": "Orders above ₹15,000"}, {"minValue": 40000.0, "discountPct": 6.0, "label": "Orders above ₹40,000"}, {"minValue": 100000.0, "discountPct": 10.0, "label": "Orders above ₹1,00,000"}];
+const ORDER_VALUE_DISCOUNTS = [];
 
 function getOrderValueDiscount(subtotal){
   let applicable = null;
